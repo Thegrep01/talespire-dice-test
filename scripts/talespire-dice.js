@@ -61,6 +61,8 @@ async function processRolls(msg) {
   let formula;
   let isRoll;
 
+  console.log(msg)
+
   if (parseFloat(game.version) >= 9 || parseFloat(game.data.version) >= 0.8) {
     if (msg.isRoll) {
       flavor = msg.roll.options.flavor ? parseFlavorText(msg.roll.options.flavor) : "dice";
